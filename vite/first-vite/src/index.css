@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.icon:hover {
+  background-color: #f97316;
+  transition: all 0.3s;
+}
+
+.icon:hover {
+  .svg-icon {
+      transition: filter 0.3s ease;
+      filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(2%) hue-rotate(357deg) brightness(116%) contrast(101%);
+      /* This filter changes the SVG color to white */
+      /* If you want to convert filter color from HEX color go to "CSS Filter Generator" on the website*/
+  }
+
+  span {
+      color: white;
+      transition: all 0.3s;
+  }
+}
+
+.input {
+  box-shadow: gray 0px 2px 4px 2px;
+}
+
+.social-icon {
+  filter: brightness(0) saturate(100%) invert(30%) sepia(73%) saturate(3287%) hue-rotate(216deg) brightness(93%) contrast(97%);
+}
+.social-icon:hover{
+  filter: brightness(0) saturate(100%) invert(54%) sepia(27%) saturate(5227%) hue-rotate(352deg) brightness(100%) contrast(96%);
+}
+.scrollbar::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for WebKit browsers */
+}
